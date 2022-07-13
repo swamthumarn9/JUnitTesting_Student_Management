@@ -54,9 +54,8 @@ public class UserServiceTests {
 		setuser.setUserRole("Admin");
 		//when(userRepo.findByUserName("John")).thenReturn(setuser);
 		when(userRepo.existsByUserNameAndUserPassword("John","123")).thenReturn(true);
-		
-		assertTrue(setuser.getUserName().equals("John"));
-		assertTrue(setuser.getUserPassword().equals("123"));
+		Boolean getUser=userService.getUserNameandPassword("John","123");
+		assertEquals(true, getUser);
 	}
 	
 	

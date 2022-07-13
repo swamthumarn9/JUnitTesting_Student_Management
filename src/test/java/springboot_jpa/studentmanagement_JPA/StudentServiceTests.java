@@ -122,7 +122,6 @@ public class StudentServiceTests {
 		c1.setCourseName("Java");
 		courselist.add(c1);
 		s1.setCourse(courselist);
-		
 		Student s2=new Student();
 		s2.setStudentId("STU001");
 		s2.setStudentName("Ryan");
